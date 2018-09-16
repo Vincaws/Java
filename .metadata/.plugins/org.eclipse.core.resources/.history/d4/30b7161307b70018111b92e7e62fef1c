@@ -1,0 +1,43 @@
+package Test02;
+
+import Test01.AbstractPublic;
+
+public class test02 {
+
+}
+
+abstract class AbstractPublic {
+	public abstract void abstractMetnod();
+
+	public void hookMethod() {
+
+	}
+
+	public final void concerteMethod() {
+
+	}
+
+	/**
+	 * @author Chan_
+	 *
+	 */
+
+	public void temlatMethod() {
+		concerteMethod();
+		hookMethod();
+		abstractMetnod();
+	}
+}
+
+class Concrete extends AbstractPublic {
+
+	@Override
+	public void abstractMetnod() {
+		System.out.println("Concreate Method");
+	}
+
+	public void hookMethod() {
+		System.out.println("Method Rewrite");
+	}
+
+}

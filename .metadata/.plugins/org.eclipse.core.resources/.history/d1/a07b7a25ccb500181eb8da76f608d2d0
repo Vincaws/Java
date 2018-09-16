@@ -1,0 +1,19 @@
+package Test01;
+
+public class Test {
+	public static void main(String[] args) {
+
+	}
+}
+
+class Teacher {
+
+}
+
+class JavaTeatcher extends Teacher {
+
+}
+
+class PHPTeatcher extends Teacher {
+
+}

@@ -1,0 +1,31 @@
+package Project04;
+
+/**
+ * @author Chan_
+ * 类不可以做多继承
+ * 接口可以做多继承
+ *
+ */
+public class Test01 {
+	public static void main(String[] args) {
+
+	}
+}
+
+class A {
+	public void menthod() {
+
+	}
+}
+
+
+
+class B {
+	public void method2() {
+	}
+}
+
+class C {
+	public void method() {
+	}
+}

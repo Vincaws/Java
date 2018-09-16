@@ -1,0 +1,48 @@
+package Test02;
+
+public class test02 {
+
+}
+
+abstract class CalltimeAbstractPublic {
+	public abstract void abstractMetnod();
+
+	public void hookMethod() {
+
+	}
+
+	public final long concerteMethod() {
+		long CurrentTime = System.currentTimeMillis();
+		return CurrentTime;
+	}
+
+	/**
+	 * @author Chan_
+	 *
+	 */
+
+	public void temlatMethod() {
+		concerteMethod();
+		hookMethod();
+		abstractMetnod();
+	}
+}
+
+class Concrete extends CalltimeAbstractPublic {
+
+	@Override
+	public void abstractMetnod() {
+		System.out.println("Concreate Method");
+	}
+
+	public void hookMethod() {
+		System.out.println("Method Rewrite");
+	}
+
+	public void doJob() {
+		for (int i = 0; i < 100; i++) {
+			System.out.println("jisuan shjian");
+		}
+	}
+
+}
